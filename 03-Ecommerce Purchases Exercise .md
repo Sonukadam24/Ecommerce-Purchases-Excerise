@@ -366,7 +366,7 @@ ecom[(ecom['CC Provider']=='American Express') & (ecom['Purchase Price']>95)].co
 
 
 
-** Hard: How many people have a credit card that expires in 2025? **
+** How many people have a credit card that expires in 2025? **
 
 
 ```python
@@ -380,7 +380,7 @@ sum(ecom['CC Exp Date'].apply(lambda x: x[3:])=='25')
 
 
 
-** Hard: What are the top 5 most popular email providers/hosts (e.g. gmail.com, yahoo.com, etc...) **
+**What are the top 5 most popular email providers/hosts (e.g. gmail.com, yahoo.com, etc...) **
 
 
 ```python
@@ -399,4 +399,3 @@ ecom['Email'].apply(lambda x: x.split('@')[1]).value_counts().head()
 
 
 
-# Great Job!
